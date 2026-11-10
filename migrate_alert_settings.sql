@@ -1,0 +1,13 @@
+USE weather_db;
+
+CREATE TABLE IF NOT EXISTS weather_alert_settings (
+    id TINYINT UNSIGNED PRIMARY KEY,
+    low_temp FLOAT NOT NULL DEFAULT 32,
+    high_temp FLOAT NOT NULL DEFAULT 100,
+    high_humidity FLOAT NOT NULL DEFAULT 95,
+    high_wind_speed FLOAT NOT NULL DEFAULT 50,
+    heavy_rain FLOAT NOT NULL DEFAULT 5,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+INSERT IGNORE INTO weather_alert_settings (id) VALUES (1);
