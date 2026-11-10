@@ -5,7 +5,7 @@ $host = "up-de-fra1-mysql-1.db.run-on-seenode.comt";
 $username = "db_rk0u6v7c7ypq";
 $password = "fWbfqYo8IH82HZU2IQSUfIOj";
 $database = "db_rk0u6v7c7ypq";
-$port = ""11550;
+$port = "11550";
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 $conn = new mysqli($host, $username, $password, $database,$port);
 
